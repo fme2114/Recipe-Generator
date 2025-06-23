@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe Generator</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fdf6e3;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+      background: #fff3cd;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #d2691e;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+
+    .ingredients-container, .recipes-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .ingredients-container button, .recipes-container button {
+      padding: 10px 15px;
+      border: none;
+      background-color: #ffa07a;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .ingredients-container button:hover, .recipes-container button:hover {
+      background-color: #ff7f50;
+    }
+
+    .results-header {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .filter-section {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 10px;
+    }
+
+    .filter-section select {
+      padding: 5px 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Recipe Generator</h1>
+    <p class="subtitle">Add in your ingredients to generate endless recipe ideas!</p>
+
+    <div class="ingredients-container">
+      <button>Ingredients</button>
+      <button>Ingredients</button>
+      <button>Ingredients</button>
+      <button>Ingredients</button>
+      <button>Ingredients</button>
+      <button>Ingredients</button>
+      <button>Ingredients</button>
+      <button>Ingredients</button>
+    </div>
+
+    <div class="results-header">Here’s what you can make:</div>
+
+    <div class="filter-section">
+      <select id="filterOptions">
+        <option value="">Filter</option>
+        <option value="az">A-Z</option>
+        <option value="price">Price</option>
+        <option value="prepTime">Prep Time</option>
+        <option value="cuisine">Cuisine Type</option>
+      </select>
+    </div>
+
+    <div class="recipes-container">
+      <button>Omelet</button>
+      <button>Sandwich</button>
+      <button>Salad</button>
+      <button>Cake</button>
+      <button>Fruit salad</button>
+      <button>Spaghetti</button>
+      <button>PB&J</button>
+      <button>Burrito</button>
+      <button>Quesadilla</button>
+      <button>Pasta</button>
+      <button>Ramen</button>
+      <button>Tacos</button>
+    </div>
+  </div>
+</body>
+</html>
